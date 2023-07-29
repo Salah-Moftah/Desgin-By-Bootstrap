@@ -5,7 +5,7 @@
    Solution for a challenge from  <a href="https://www.graphberry.com/item/bondi-psd-landing-page" target="_blank">Bondi - PSD Landing Page</a>.
 </div>
 
-<div><h3>Demo: </h3><a href="https://stellular-cascaron-7c9044.netlify.app" target="_blank">https://stellular-cascaron-7c9044.netlify.app</a></div>
+<div><h3>Demo: </h3><a href="https://bright-bubblegum-c1f178.netlify.app" target="_blank">https://bright-bubblegum-c1f178.netlify.app</a></div>
 
 
 
