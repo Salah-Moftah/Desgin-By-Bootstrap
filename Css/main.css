@@ -1,0 +1,210 @@
+/* Start Global Rules */
+:root {
+  --main-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+.main-btn:hover {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+.title::before {
+  content: "";
+  position: absolute;
+  background-color: var(--green-color);
+  height: 2px;
+  bottom: -20px;
+  width: 106px;
+  left: 50%;
+  transform: translateX(-50px);
+}
+ul {
+  list-style: none;
+}
+/* End Global Rules */
+/* Start Navbar */
+.navbar {
+  background-color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 20px;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .navbar-toggler {
+  font-size: 25px;
+  border-color: #fff;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+/* End Navbar */
+/* Start Landing */
+.landing {
+  background-color: var(--main-color);
+  min-height: calc(100vh - 78px);
+}
+/* End Landing */
+/* Start Features */
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translatex(-50%);
+}
+.features .icon-holder .number {
+  color: var(--section-color);
+  font-size: 12rem;
+}
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+.features h4 {
+  color: var(--yellow-color);
+}
+/* End Features */
+/* Start Work */
+.work {
+  background-color: var(--section-color);
+}
+.work ul li:not(:last-child) {
+  margin-left: 20px;
+  font-size: 18px;
+}
+@media (max-width: 767.98px) {
+  .work ul li:not(:last-child) {
+    margin-left: 0;
+  }
+}
+.work ul li.active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  font-weight: bold;
+}
+.work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.work ul li:hover {
+  color: var(--red-color);
+}
+.work ul li.active:hover {
+  color: var(--yellow-color);
+}
+.work .box {
+  padding: 5px;
+}
+.work .box::before {
+  content: attr(data-work);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: hsla(178, 63%, 51%, 70%);
+  transition: 0.3s;
+  transform: translatex(calc(-100% - 5px));
+}
+.work .box:hover::before {
+  transform: translatex(0);
+}
+/* End Work */
+/* Start Stuff */
+.stuff .description {
+  max-width: 50%;
+}
+/* End Stuff */
+/* Start Team */
+.team {
+  background-color: var(--section-color);
+}
+.team h2 {
+  color: var(--yellow-color);
+}
+.team .head {
+  background-color: var(--green-color);
+}
+/* End Team */
+/* Start Project */
+.project {
+  background-color: var(--main-color);
+}
+/* End Project */
+/* Start Subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe .title {
+  color: var(--main-color);
+}
+.subscribe .email {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.subscribe .email:focus {
+  outline: none;
+}
+.subscribe .sub {
+  background-color: var(--main-color);
+  color: var(--yellow-color);
+}
+.subscribe ::placeholder {
+  color: #fff;
+  font-size: 20px;
+}
+/* End Subscribe */
+/* Start Footer */
+footer {
+  background-color: var(--main-color);
+}
+footer .name {
+  color: var(--green-color);
+}
+footer .bondi {
+  color: var(--yellow-color);
+}
+footer .social svg {
+  width: 20px;
+  height: 20px;
+}
+footer .facebook {
+  background-color: #1877f2;
+}
+footer .twitter {
+  background-color: #1da1f2;
+}
+footer .linkedin {
+  background-color: #0077b5;
+}
+footer .youtube {
+  background-color: #ff0000;
+}
+/* End Footer */
